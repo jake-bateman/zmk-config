@@ -7,8 +7,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-&left_encoder { resolution = <1>; };
-&right_encoder { resolution = <1>; };
+&left_encoder { resolution = <2>; };
+&right_encoder { resolution = <2>; };
 
 #define DEFAULT 0
 #define NUM 1
@@ -46,7 +46,7 @@
 	                 &kp LGUI &kp LEFT &kp RIGHT &kp SPACE &kp LCTRL        &kp DEL  &kp RET  &kp UP &kp N0 &kp RSHFT
 			>;
 
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
 		};
 
 
