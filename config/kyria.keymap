@@ -43,7 +43,7 @@
 				bindings = <
 	&kp EQUAL   &kp EXCL &kp AT &kp LPAR &kp RPAR &kp HASH                                                &kp PLUS &kp N7  &kp N8     &kp N9   &kp P    &kp UNDER
 	&kp BSPC   &kp MINUS &kp EQUAL &kp LBRC &kp RBRC &kp PLUS                                                &kp MINUS &kp N4  &kp N5     &kp N6   &kp SEMI &kp SQT
-	&kp LSHFT &kp PRCNT &kp CARET &kp AMPS &kp STAR &kp B &mo NUM &bt BT_CLR        &bt BT_PRV &bt BT_NXT &kp EQUAL &kp N1  &kp N2 &kp N3 &kp FSLH &kp RSHFT
+	&kp LSHFT &kp PRCNT &kp CARET &kp AMPS &kp STAR &kp TILDE &mo NUM &bt BT_CLR        &bt BT_PRV &bt BT_NXT &kp EQUAL &kp N1  &kp N2 &kp N3 &kp FSLH &kp RSHFT
 	                 &kp LGUI &kp LEFT &kp RIGHT &kp SPACE &kp LCTRL        &kp DEL  &kp RET  &kp UP &kp N0 &kp RSHFT
 			>;
 
