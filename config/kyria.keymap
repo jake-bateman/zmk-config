@@ -13,6 +13,7 @@
 
 #define DEFAULT 0
 #define NUM 1
+#define FN 2
 
 #define NONE 0
 
@@ -31,7 +32,7 @@
 			bindings = <
 	&kp TAB   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
 	&kp BSPC   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &lt NUM SEMI &kp SQT
-	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &mo NUM &kp ESC        &kp LALT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &mo NUM &lt FN ESC        &kp LALT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
 	                 &kp LGUI &kp LEFT &kp RIGHT &kp SPACE &kp LCTRL        &kp DEL  &kp RET  &kp UP &kp DOWN &kp RSHFT
 			>;
 
@@ -43,12 +44,24 @@
 				bindings = <
 	&kp EQUAL   &kp EXCL &kp AT &kp LPAR &kp RPAR &kp HASH                                                &kp PLUS &kp N7  &kp N8     &kp N9   &kp P    &kp UNDER
 	&kp BSPC   &kp MINUS &kp EQUAL &kp LBRC &kp RBRC &kp PLUS                                                &kp MINUS &kp N4  &kp N5     &kp N6   &kp SEMI &kp SQT
-	&kp LSHFT &kp PRCNT &kp CARET &kp LBKT &kp RBKT &kp TILDE &mo NUM &bt BT_CLR        &bt BT_PRV &bt BT_NXT &kp EQUAL &kp N1  &kp N2 &kp N3 &kp FSLH &kp RSHFT
+	&kp LSHFT &kp PRCNT &kp CARET &kp LBKT &kp RBKT &kp TILDE &mo NUM &lt FN ESC        &bt BT_PRV &bt BT_NXT &kp EQUAL &kp N1  &kp N2 &kp N3 &kp FSLH &kp RSHFT
 	                 &kp LGUI &kp LEFT &kp RIGHT &kp SPACE &kp LCTRL        &kp DEL  &kp RET  &kp UP &kp N0 &kp RSHFT
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
 		};
+	function_layer{
+
+                                bindings = <
+        &kp EQUAL   &kp EXCL &kp AT &bt BT_CLR &bt BT_PRV &bt BT_NXT                                                &kp PLUS &kp F7  &kp F8     &kp F9   &kp P    &kp UNDER
+        &kp BSPC   &kp MINUS &kp EQUAL &kp LBRC &kp RBRC &kp PLUS                                                &kp MINUS &kp F4  &kp F5     &kp F6   &kp SEMI &kp SQT
+        &kp LSHFT &kp PRCNT &kp CARET &kp LBKT &kp RBKT &kp TILDE &mo NUM &lt FN ESC        &bt BT_PRV &bt BT_NXT &kp EQUAL &kp F1  &kp F2 &kp F3 &kp FSLH &kp RSHFT
+                         &kp LGUI &kp LEFT &kp RIGHT &kp SPACE &kp LCTRL        &kp DEL  &kp RET  &kp UP &kp N0 &kp RSHFT
+                        >;
+
+                        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
+                };
+
 
 
 	};
