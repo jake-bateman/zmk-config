@@ -32,7 +32,7 @@
 			bindings = <
 	&kp TAB   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
 	&kp BSPC   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &lt NUM SEMI &kp SQT
-	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &mo NUM &lt FN ESC        &kp LALT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &mo NUM &lt FN ESC        &kp LALT &kp LGUI &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
 	                 &kp LGUI &kp LEFT &kp RIGHT &kp SPACE &kp LCTRL        &kp DEL  &kp RET  &kp UP &kp DOWN &kp RSHFT
 			>;
 
