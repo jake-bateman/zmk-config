@@ -8,8 +8,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-&left_encoder { resolution = <2>; };
-&right_encoder { resolution = <2>; };
+&left_encoder { steps = <40> /* Change this to your encoder's number of detents times 2 */; };
+&right_encoder { steps = <40> /* Change this to your encoder's number of detents times 2 */; };
 
 #define DEFAULT 0
 #define NUM 1
@@ -65,4 +65,11 @@
 
 
 	};
+};
+
+&sensors {
+    // Change this to your encoder's number of detents.
+    // If you have multiple encoders with different detents, see
+    // https://zmk.dev/docs/config/encoders#keymap-sensor-config
+    triggers-per-rotation = <20>;
 };
